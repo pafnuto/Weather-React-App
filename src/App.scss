@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto&family=Roboto+Mono&family=Rubik:wght@500&display=swap');
+
+$textcolor: white;
+$backcolor:rgb(121, 183, 194);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height:100%;
+  background-color:#313131;
+  padding: 40px;
+}
+.big-box{
+  display: block;
+  background-color:rgb(104, 128, 128);
+  border:rgba(0, 0, 0, 0.2);
+  height: 35rem;
+  width: 40rem;
+  margin-left: 25rem;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 60px;
+  display: block;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 40px auto;
+  background-color: $backcolor;
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: $textcolor;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  margin: 20px auto;
+  color:white;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 6px 6px rgba(50, 50, 70, 0.5);
+}
